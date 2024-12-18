@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navigation Bar -->
+  <header class="bg-white shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6 lg:px-20">
+      <div class="text-blue-600 text-lg font-bold">🎓 RightStepAdmission</div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">University List</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Support</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Profile</a></li>
+      </ul>
+      <button class="md:hidden text-gray-600 focus:outline-none">☰</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-6 lg:px-20">
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-10">Profile</h1>
+    <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-10">
+      <!-- Profile Picture -->
+      <div class="w-52 h-52 bg-blue-100 border-4 border-blue-500 rounded-full flex items-center justify-center">
+        <img src="assets/Studying-bro.jpg" alt="Profile Image" class="rounded-full w-full h-full object-cover">
+      </div>
+      
+      <!-- Profile Details -->
+      <div class="bg-gray-200 p-6 rounded-lg shadow-lg w-full max-w-md">
+        <p class="text-lg font-semibold text-gray-800 mb-4">User-Id: <span class="font-normal">6513232165</span></p>
+        <p class="text-lg font-semibold text-gray-800 mb-4">Name: <span class="font-normal">Naimul Mustafa</span></p>
+        <p class="text-lg font-semibold text-gray-800 mb-4">College: <span class="font-normal">[Your College]</span></p>
+        <p class="text-lg font-semibold text-gray-800 mb-4">Age: <span class="font-normal">[Your Age]</span></p>
+        <p class="text-lg font-semibold text-gray-800 mb-4">GPA: <span class="font-normal">[Your GPA]</span></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-gray-500 text-sm">
+    © 2024 RightStepAdmission. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navigation Bar -->
+  <header class="bg-white shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6 lg:px-20">
+      <div class="text-blue-600 text-lg font-bold">🎓 RightStepAdmission</div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">University List</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Support</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Profile</a></li>
+      </ul>
+      <button class="md:hidden text-gray-600 focus:outline-none">☰</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-6 lg:px-20">
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-8">University List</h1>
+    <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+      <!-- Public Universities Card -->
+      <div class="bg-blue-600 text-white rounded-lg shadow-lg w-72 h-40 flex flex-col items-center justify-center text-center hover:scale-105 transition transform">
+        <h2 class="text-xl font-semibold">List of Public Universities</h2>
+        <a href="#" class="mt-4 bg-white text-blue-600 py-2 px-6 rounded-lg font-medium hover:bg-gray-100 transition">View List</a>
+      </div>
+      <!-- Private Universities Card -->
+      <div class="bg-blue-600 text-white rounded-lg shadow-lg w-72 h-40 flex flex-col items-center justify-center text-center hover:scale-105 transition transform">
+        <h2 class="text-xl font-semibold">List of Private Universities</h2>
+        <a href="#" class="mt-4 bg-white text-blue-600 py-2 px-6 rounded-lg font-medium hover:bg-gray-100 transition">View List</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Illustration -->
+  <div class="fixed bottom-0 right-0 mr-4 mb-4">
+    <img src="assets/Studying-bro.svg" alt="Student Illustration" class="w-40 lg:w-52">
+  </div>
+</body>
+</html>

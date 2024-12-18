@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RightStepAdmission</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans
+">
+  <!-- Navigation Bar -->
+ <header class="">
+    <nav class="bg-white shadow-lg p-8 px-2 lg:px-20">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+          <div class="text-blue-600 text-lg font-bold">🎓 RightStepAdmission</div>
+          <div class="hidden md:flex space-x-6">
+            <a href="" class="text-gray-600 hover:text-blue-600 transition">Home</a> 
+            <a href="" class="text-gray-600 hover:text-blue-600 transition">University List</a>
+            <a href="" class="text-gray-600 hover:text-blue-600 transition">Support</a>
+            <a href="" class="text-gray-600 hover:text-blue-600 transition">Profile</a>
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button class="text-gray-600 focus:outline-none">
+              ☰
+            </button>
+          </div>
+        </div>
+      </nav>
+ </header>
+
+  <!-- Hero Section -->
+ <main class="px-2 lg:px-20">
+    <section class="container mx-auto px-6 py-12">
+        <div class="flex flex-col lg:flex-row items-center">
+          <!-- Left Text Content -->
+          <div class="lg:w-1/2 flex-col felx-row lg:flex-col items-center pl-10">
+            <h1 class="lg:text-5xl text-3xl font-bold text-gray-800 leading-tight mb-4 lg:py-8">
+              Navigate Admissions with Confidence
+            </h1>
+            <p class="text-gray-600 py-2 lg:pb-6 text-2xl lg:text-4xl mb-6">
+              Join RightStepAdmission <br> and simplify your admission journey.
+            </p>
+            <button onclick="location.href='login.html'" class=" bg-blue-600 text-white py-2 font-bold px-2 lg:px-6 rounded-lg shadow hover:bg-blue-700 ml-24 lg:ml-56">
+              Register Now!
+            </button>
+          </div>
+          <!-- Right Illustration -->
+          <div class="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+           
+              <!-- Center Character -->
+              <img class="lg:w-[30rem]" src="assets/college admission-amico.svg" alt="Character" class="w-48 h-48 mx-auto">
+            </div>
+          </div>
+        </div>
+      </section>
+ </main>
+
+  <!-- Footer -->
+  <footer>
+   
+  </footer>
+
+  <!-- Custom Animation -->
+  <style>
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    .animate-float {
+      animation: float 4s infinite;
+    }
+    .animation-delay-200 {
+      animation-delay: 0.2s;
+    }
+    .animation-delay-400 {
+      animation-delay: 0.4s;
+    }
+    .animation-delay-600 {
+      animation-delay: 0.6s;
+    }
+  </style>
+</body>
+</html>

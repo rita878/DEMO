@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RightStepAdmission - Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans min-h-screen flex items-center justify-center">
+  <!-- Container -->
+  <div class="container mx-auto p-4 lg:px-20 flex flex-col lg:flex-row items-center gap-8">
+    <!-- Left Section -->
+    <div class="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">RightStepAdmission</h1>
+      <p class="text-lg text-gray-600 mb-6">
+        Join RightStepAdmission today and simplify your admission journey!
+      </p>
+      <img src="assets/Studying-pana.svg" alt="Student Illustration" class="w-full max-w-sm lg:max-w-md">
+    </div>
+
+    <!-- Right Section -->
+    <div class="lg:w-1/2 bg-white rounded-lg shadow-lg p-6 lg:p-12">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6">Create a New Account</h2>
+      <form action="#" method="POST" class="space-y-4">
+        <!-- Full Name -->
+        <div>
+          <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <!-- Email Address -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <!-- Password -->
+        <div class="relative">
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+          <button type="button" class="absolute inset-y-0 right-3 flex items-center text-gray-500 focus:outline-none" onclick="togglePassword('password')">
+            👁️
+          </button>
+        </div>
+        <!-- Confirm Password -->
+        <div class="relative">
+          <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+          <button type="button" class="absolute inset-y-0 right-3 flex items-center text-gray-500 focus:outline-none" onclick="togglePassword('confirm-password')">
+            👁️
+          </button>
+        </div>
+        <!-- Submit Button -->
+        <div>
+          <button  onclick="location.href='index.html'" type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded-lg shadow hover:bg-blue-700 transition">
+            Sign Up
+          </button>
+        </div>
+      </form>
+      <!-- Footer Link -->
+      <p class="text-center text-sm text-gray-600 mt-6">
+        Already have an account? <a href="#" class="text-blue-600 hover:underline">Log in</a>
+      </p> 
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function togglePassword(fieldId) {
+      const field = document.getElementById(fieldId);
+      field.type = field.type === 'password' ? 'text' : 'password';
+    }
+    
+  </script>
+</body>
+</html>
