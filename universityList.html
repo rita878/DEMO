@@ -9,16 +9,13 @@
 <body class="bg-gray-50 font-sans">
   <!-- Navigation Bar -->
   <header class="bg-white shadow-lg">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6 lg:px-20">
-      <div class="text-blue-600 text-lg font-bold">🎓 RightStepAdmission</div>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Home</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">University List</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Support</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Profile</a></li>
-      </ul>
-      <button class="md:hidden text-gray-600 focus:outline-none">☰</button>
-    </nav>
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data)
+        .catch(error => console.error('Error loading navbar:', error));
+    </script>
   </header>
 
   <!-- Main Content -->
@@ -28,7 +25,7 @@
       <!-- Public Universities Card -->
       <div class="bg-blue-600 text-white rounded-lg shadow-lg w-72 h-40 flex flex-col items-center justify-center text-center hover:scale-105 transition transform">
         <h2 class="text-xl font-semibold">List of Public Universities</h2>
-        <a href="#" class="mt-4 bg-white text-blue-600 py-2 px-6 rounded-lg font-medium hover:bg-gray-100 transition">View List</a>
+        <a href="pubversitylist.html" class="mt-4 bg-white text-blue-600 py-2 px-6 rounded-lg font-medium hover:bg-gray-100 transition">View List</a>
       </div>
       <!-- Private Universities Card -->
       <div class="bg-blue-600 text-white rounded-lg shadow-lg w-72 h-40 flex flex-col items-center justify-center text-center hover:scale-105 transition transform">

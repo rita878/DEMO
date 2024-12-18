@@ -9,16 +9,13 @@
 <body class="bg-gray-50 font-sans">
   <!-- Navigation Bar -->
   <header class="bg-white shadow-lg">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6 lg:px-20">
-      <div class="text-blue-600 text-lg font-bold">🎓 RightStepAdmission</div>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Home</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">University List</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Support</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-blue-600 transition">Profile</a></li>
-      </ul>
-      <button class="md:hidden text-gray-600 focus:outline-none">☰</button>
-    </nav>
+    <div id="navbar"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar').innerHTML = data)
+        .catch(error => console.error('Error loading navbar:', error));
+    </script>
   </header>
 
   <!-- Main Content -->
@@ -29,7 +26,7 @@
       <li><a href="#" class="text-blue-600 hover:underline">University of Rajshahi</a></li>
       <li><a href="#" class="text-blue-600 hover:underline">Bangladesh Agricultural University</a></li>
       <li><a href="#" class="text-blue-600 hover:underline">Bangladesh University of Engineering & Technology</a></li>
-      <li><a href="#" class="text-blue-600 hover:underline">University of Chittagong</a></li>
+      <li><a href="formfill.html" class="text-blue-600 hover:underline">University of Chittagong</a></li>
       <li><a href="#" class="text-blue-600 hover:underline">Jahangirnagar University</a></li>
       <li><a href="#" class="text-blue-600 hover:underline">Islamic University, Bangladesh</a></li>
       <li><a href="#" class="text-blue-600 hover:underline">Shahjalal University of Science & Technology</a></li>

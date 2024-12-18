@@ -6,27 +6,17 @@
   <title>RightStepAdmission</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 font-sans
-">
+<body class="bg-gray-50 font-sans">
   <!-- Navigation Bar -->
  <header class="">
-    <nav class="bg-white shadow-lg p-8 px-2 lg:px-20">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-          <div class="text-blue-600 text-lg font-bold">🎓 RightStepAdmission</div>
-          <div class="hidden md:flex space-x-6">
-            <a href="" class="text-gray-600 hover:text-blue-600 transition">Home</a> 
-            <a href="" class="text-gray-600 hover:text-blue-600 transition">University List</a>
-            <a href="" class="text-gray-600 hover:text-blue-600 transition">Support</a>
-            <a href="" class="text-gray-600 hover:text-blue-600 transition">Profile</a>
-          </div>
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden">
-            <button class="text-gray-600 focus:outline-none">
-              ☰
-            </button>
-          </div>
-        </div>
-      </nav>
+  <div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('navbar').innerHTML = data)
+    .catch(error => console.error('Error loading navbar:', error));
+</script>
+
  </header>
 
   <!-- Hero Section -->

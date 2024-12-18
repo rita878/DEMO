@@ -21,7 +21,7 @@
     <!-- Right Section -->
     <div class="lg:w-1/2 bg-white rounded-lg shadow-lg p-6 lg:p-12">
       <h2 class="text-2xl font-semibold text-gray-800 mb-6">Create a New Account</h2>
-      <form action="#" method="POST" class="space-y-4">
+      <form action="#" method="POST" class="space-y-4" onsubmit="showModal(event)">
         <!-- Full Name -->
         <div>
           <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
@@ -50,7 +50,7 @@
         </div>
         <!-- Submit Button -->
         <div>
-          <button  onclick="location.href='index.html'" type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded-lg shadow hover:bg-blue-700 transition">
+          <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded-lg shadow hover:bg-blue-700 transition">
             Sign Up
           </button>
         </div>
@@ -62,13 +62,32 @@
     </div>
   </div>
 
+  <!-- Modal -->
+  <div id="success-modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg p-6 w-80 text-center">
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Account Created Successfully!</h3>
+      <p class="text-gray-600 mb-6">Welcome to RightStepAdmission!</p>
+      <button onclick="redirectToLandingPage()" class="w-full bg-blue-600 text-white font-bold py-2 rounded-lg shadow hover:bg-blue-700 transition">
+        Close
+      </button>
+    </div>
+  </div>
+
   <!-- JavaScript -->
   <script>
     function togglePassword(fieldId) {
       const field = document.getElementById(fieldId);
       field.type = field.type === 'password' ? 'text' : 'password';
     }
-    
+
+    function showModal(event) {
+      event.preventDefault(); // Prevent form submission
+      document.getElementById('success-modal').classList.remove('hidden');
+    }
+
+    function redirectToLandingPage() {
+      window.location.href = '/index.html'; // Update the path to your landing page
+    }
   </script>
 </body>
 </html>
